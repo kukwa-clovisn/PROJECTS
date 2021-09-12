@@ -1,0 +1,317 @@
+*, body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: mediumseagreen;
+}
+
+header{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    /* position: relative; */
+    border: 1px solid black;
+    background-color: white;
+}
+
+header .logo{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo img{
+    width: 70%;
+    height: 90%;
+}
+
+header nav {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.menu_bar{
+    width: 40Px;
+    height: 35px;
+    display: block;
+    background-color: silver;
+    border: 1px solid black;
+    position: relative;
+    left: -8%;
+    top: 30%;
+    padding: 15px 0 0 5px;
+}
+
+
+
+.menu_bar p{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px;
+}
+
+.menu{
+   width: 100%;
+   height: 100vh;
+   display: none;
+   background-color: white;
+}
+
+.menu ul{
+     display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.menu ul li{
+    width: 100%;
+    height: 15vh;
+    border-top: 1px solid gray;
+    /* background-color: whitesmoke; */
+}
+
+.menu ul li:nth-child(2n){
+    background-color: whitesmoke;
+}
+
+.menu ul li a{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-size: 25px;
+    color: black; 
+    padding-left: 20px;
+   text-transform: capitalize;
+   display: flex;
+   align-items: center;
+}
+
+.menu ul li a:hover{
+    color: white;
+    background-color: rgb(98, 98, 226);
+    transition:all 0.4s ease;
+}
+
+.toggle_menu{
+    display: block;
+    z-index: 1;
+    transition: all 1s ease;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-image: url(./images/bg05\ \(14\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home h1{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    text-transform: capitalize;
+    padding: 100px;
+}
+
+.home .shop, .home .find{
+    width: 20%;
+    height: 10%;
+    border: 1px solid white;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: inherit;
+    text-transform: capitalize;
+    font-size: 130%;
+}
+
+.home .shop{
+    background-color: white;
+    color: black;
+}
+
+.home .shop:hover, .home .find:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.2);
+    color: white;
+    background-color: black;
+}
+
+/* coding the store section of the website =========================================================================>*/
+#store{
+    width: 100%;
+    height: auto;
+    background-color: mediumseagreen;
+}
+
+#store h1{
+    font-size: 250%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-transform: capitalize;
+    /* background-color: green; */
+}
+
+#store p{
+    padding:0 30px;
+    font-size: 150%;
+    word-wrap: break-word;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+#store p.para::first-letter{
+    font-size: 50px;
+}
+
+#store .first_class{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#store .first_class .left, #store .first_class .middle, 
+#store .first_class .right{
+    display: block;
+    width: 32%;
+    height: 100%;
+}
+
+#store .first_class .left img, #store .first_class .middle img, 
+#store .first_class .right img{
+    width:95%;
+    height: 50%;
+}
+
+c p, #store .first_class h3{
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+#store .first_class .select{
+    width: 50%;
+    height: 6%;
+    border: 1px solid white;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    margin-left: 5%;
+}
+
+#store .first_class .select:hover{
+    color: white;
+    transition: all 0.7s ease;
+    background-color: rgb(85, 85, 151);
+    transform: scale(1.1);
+}
+
+.payments{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: white;
+}
+
+.payments .content{
+    width: 30%;
+    height: 90%;
+}
+
+.payments  .content img{ 
+    width: 20%;
+    height: 20%;
+    position: relative;
+    left: 40%;
+   margin: 2% auto;
+}
+
+.payments  .content p{
+    text-align: center;
+    padding: 10px;
+}
+
+.buy_now{
+    width: 90%;
+    height: 60vh;
+    display: block;
+    padding: 10px;
+    background: url(./images/bg05\ \(14\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3% auto;
+}
+
+.buy_now h1{
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.buy_now .pay{
+    width: 15%;
+    height: 20%;
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 130%;
+    background-color: white;
+    border: 1px solid white;
+}
+
+.buy_now .pay:hover{
+    background-color: inherit;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.4s ease-out;
+}
+
+footer{
+    padding: 20px;
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+}
+
+footer p{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.up, .up a{
+    text-decoration: none;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    float: right;
+    font-size: 80px;
+    color: red;
+    z-index: 1;
+}

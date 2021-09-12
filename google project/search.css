@@ -1,0 +1,137 @@
+body{
+    background:  #9194A3;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 80vh;
+    display: inline block;
+    padding: 10px;
+}
+
+h1{
+    width: 250px;
+    font-size: 100px;
+    text-transform: capitalize;
+    color: black;
+    opacity: 0.5;
+    margin: 20px auto;
+}
+
+.search_input{
+    margin: 0 auto 35px auto;
+    width: 500px;
+    height: 35px;
+    border: none;
+}
+
+#input{
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+    padding: 5px 20px 3px 30px;
+    border: none;
+    border-radius: 30px 30px 30px 30px;
+    outline: none;
+}
+
+.content{
+    display: flex;
+    width: 500px;
+    height: 20vh;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.facebook, .youtube, .upwork, .w3schools,
+.googlemaps, .kcn_enterprise, .googleadd, .stackoverflow, .twitter, .instargram{
+    width: 130px;
+    height: 100px;
+    background-color: inherit;
+}
+
+.facebook_icon, .youtube_icon, .upwork_icon, .w3schools_icon,
+.googlemaps_icon, .kcn_enterprise_icon, .googleadd_icon, .stackoverflow_icon, .twitter_icon, .adds_icon {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #A9ABB6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+span{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: blue;
+    text-transform: initial !important;
+}
+
+#utube{
+    background-color: red;
+}
+
+#gadd, #kcn, #gmap, #w3school{
+    background-color: inherit;
+}
+
+#gadd{
+    color: black;
+    font-size: 25px;
+}
+
+#kcn{
+    font-size: 15px;
+}
+
+#uwork{
+    background-color: green;
+    opacity: 0.8;
+}
+
+#add{
+    background-color: rgb(87, 65, 11);
+}
+
+#w3school, #kcn{
+    color: green;
+}
+
+.chrome{
+    width: 150px;
+    height: 30px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: white;
+    border-radius: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(19, 154, 207);
+    font-weight: 500;
+}
+
+p{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.googleadd p{
+    text-transform: lowercase;
+}

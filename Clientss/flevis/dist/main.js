@@ -1,0 +1,1 @@
+document.getElementById("menu_bar").addEventListener("click",(()=>{document.getElementById("menu").classList.toggle("toggle_menu")}));

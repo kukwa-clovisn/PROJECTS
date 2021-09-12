@@ -1,0 +1,149 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #222;
+  overflow-y: hidden;
+}
+
+h1{
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  text-transform: capitalize;
+  padding: 10px;
+  margin-top: 10vh;
+  line-height: 30px;
+}
+
+h1 #ninja{
+  color: crimson;
+}
+
+h1 i{
+  color: purple;
+}
+
+#show1, #show2{
+  display: none;
+}
+ #show1.show, #show2.show{
+   position: relative;
+   left: 10%;
+   text-align: center;
+   display: inline-block;
+ }
+
+ #show1 span, #show2 span{
+   opacity: 0;
+   transition: all 1s ease;
+   transform: translateY(50px);
+ }
+
+ #show1 span.fade1, #show2 span.fade2{
+   opacity: 1;
+   transform: translateY(0px);
+ }
+.main{
+  width: 90vw;
+  height: 70vh;
+  margin: auto;
+  background-color: inherit;
+}
+
+.main button{
+  color: red;
+  font-size: 2em;
+  width:200px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+  opacity: 0;
+  animation: btn 5s 1 3s alternate forwards;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  /* transition: animation 3s ease; */
+  transition: all 2s ease;
+}
+
+.main button.hide::before{
+    content: "hide";
+    margin-right: 3px
+}
+
+.main button:hover{
+  color: white;
+  background-color: teal;
+  transform: scale(1.2);
+}
+
+.main button:active{
+  color: purple;
+  button::before{
+    content: "this";
+    width: 100px;
+    height: 10px;
+    background-color: blue;
+    display: block;
+    margin-right: 5px;
+  }
+}
+
+@keyframes btn{
+  0%{opacity: 0;}
+  25%{opacity: 0.2;}
+  50%{opacity: 0.5;}
+  75%{opacity: 0.7;}
+  100%{opacity: 1;}
+}
+
+
+#web{
+  animation: web 3s 1 linear alternate forwards;
+  position: relative;
+}
+
+@keyframes web {
+  0%{
+    top: -500px;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+#ninja{
+  animation: ninja 3s 1 linear alternate forwards;
+  position: relative;
+}
+
+@keyframes ninja {
+  0%{
+    top: 1500px;
+  }
+  100%{
+    top: 0;
+  }
+}
+
+#surprise{
+  animation: surprise 3s 1 linear alternate forwards;
+  position: relative;
+}
+
+@keyframes surprise {
+
+
+  0%{
+    right: 2500px;
+  }
+  100%{
+    right: 0;
+  }
+}

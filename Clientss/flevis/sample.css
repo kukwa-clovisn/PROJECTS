@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    padding: 10px;
+    opacity: 0.6;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 40vw;
+    padding: 5px;
+    margin-left: 15px;
+     overflow: hidden;
+     font-size: 40px;
+}
+
+.menu{
+    display: flex;
+}
+
+button{
+    border: 1px solid black;
+    background-color: lightgray;
+    opacity: 0.7;
+    width: 50px;
+    height: 60px;
+    color: black;
+    margin: 10px 70px 0 0;
+
+}
+
+h1{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+    background-color: inherit;
+}
+
+h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 50px;
+}
+
+h4{
+    text-transform: capitalize;
+    opacity: 0.5;
+}
+
+h3{
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.samples p{
+    text-align: left;
+}
+.main{
+    width: 100vw;
+    height: 90vh;
+    padding: 20px;
+    background: url(./IMG-20210101-WA0022.jpg);
+    background-size: 100%;
+    /* opacity: 0.8; */
+    display: grid;
+}
+
+.samples span{
+    
+    opacity: 0.5;
+    
+}
+
+a{
+    width: 10vw;
+    height: 40px;
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid black;
+    text-transform: capitalize;
+    
+}
+
+.samples a{
+    background-color: lightgray;
+    color: black;
+    width: 150px;
+    height: 30px;
+    font-weight: 900;
+    /* position: absolute;
+    left: 20vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#shopNow{
+    background-color: white;
+    color: black;
+}
+
+#findMore{
+    background-color: inherit;
+    color: white;
+    
+}
+
+#shopNow, #findMore {
+    position: relative;
+    left: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro{
+    width: 100%;
+    height: auto;
+    background-color: silver;
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.fixed{
+    display: none;
+    position: fixed;
+    right: 0.5vw;
+    top: 40vh;
+    background: inherit;
+    width: 20vw;
+    height: 40vh;
+    opacity: 0.5;
+    font-weight: 900;
+    border-radius: 50%;
+    padding: 10px;
+    
+
+}
+.fixed p{
+    position: absolute;
+}
+
+.samples{
+    display: grid;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.firstClass, .secondClass{
+    display: flex;
+}
+
+.firstClass_sample1, .firstClass_sample2,
+.secondClass_sample1, .secondClass_sample2 {
+    width: 50vw;
+}

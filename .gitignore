@@ -1,0 +1,13 @@
+node_modules/
+assets/
+.vscode/
+images/
+*.jpg
+assets/
+*.scss
+*.map
+fontawesome-free-5.15.3-web/
+bootsrap5/
+fontawesome/
+sweetAlert/
+w3.css

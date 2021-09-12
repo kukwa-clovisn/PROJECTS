@@ -1,0 +1,208 @@
+body{
+   background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* styling the header and its contents and giving the header a fixed position.*/
+
+header{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    position: fixed;
+    background-color: white;
+    margin-top: 0;
+    box-shadow: 0 3px 3px white;
+}
+
+.left-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+}
+
+.right-header{
+    width: 20%;
+    height: 8vh;
+    position: fixed;
+    right: 3vw;
+    top: 3vh;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* styling allthe headlines of thid project in here (headline section)
+starting with those of the header*/
+
+#fixed-headline{
+    font-size: 4em;
+    color: blue;
+    text-shadow: 0 2px 1px blue;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+#login, a{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 5em;
+    color: black;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+h2{
+    color: blue;
+    font-size: 4em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+h3{
+    font-size: 400%;
+    text-align: center;
+    text-transform: capitalize;
+    color: blue;
+}
+
+p{
+    font-size: 350%;
+    text-align: center;
+}
+
+
+/* the main content */
+
+main{
+    display: inline-block;
+    margin-top: 2vh;
+    width: 100%;
+   /* background-image: url(Screenshot_20210501-101223.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    */
+}
+
+.page-one{
+    display: inline-block;
+    width: 100%;
+    height: 90%;   
+    background-color: rgb(112, 176, 230);
+}
+.page-one-div-img{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(112, 176, 230);
+}
+
+/* styling the page-one image */
+
+#page-one-img{
+    left: 20%;
+    width: 60%;
+    height: 80vh;
+}
+
+/* page two div*/
+
+.page-two{
+    width: 100%;
+    height: 40%;
+    background-color: rgb(112, 176, 230);
+}
+
+.page-three{
+    width: 100%;
+    height: 60%;
+    background-color: whitesmoke;
+}
+
+.page-four-font{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.page-four{
+    width: 100%;
+    height: 80%;
+}
+
+.page-four-one{
+    width: 60%;
+    height: 40%;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 50%;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-four-one-one{
+    width: 30%;
+    height: 30%;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 50%;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    color: blue;
+}
+
+.page-four-one-two{
+    width: 30%;
+    height: 30%;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 50%;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    color: orange;
+}
+
+.page-four-two{
+    width: 40%;
+    height: 30%;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 50%;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    color: red;
+}
+
+.page-four-three{
+    width: 30%;
+    height: 20%;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 100%;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    color: green;
+}

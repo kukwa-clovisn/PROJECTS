@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>succes</title>
+    <link rel="stylesheet" href="./sweetalert.css">
+    <style>
+        body{
+            background-color: rgb(46, 44, 44);
+            display: flex;
+        }
+        button{
+            margin: 20% auto;
+            width: 30%;
+            height: 30%;
+            padding: 10px;
+            border-radius: 12px;
+            background-color: white;
+            color: yellow;
+            box-shadow: 1px 3px 3px 2px teal;
+            transition: all 0.5s ease;
+        }
+
+        button a{
+            margin:20% auto;
+            text-transform: capitalize;
+            text-decoration: none;
+            font-size: 200%;
+            padding: 5px;
+        }
+
+        button:hover, button a:hover{
+            background-color: rgb(93, 93, 240);
+            color: white;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+    <button type="button"><a href="./index.html">back to homepage</a> </button>
+    
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./sweetalert.min.js"></script>
+    <script>
+        swal("good work", "your form has been successfully submitted ", "success");
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image slider</title>
+    <style>
+        body{
+            background: white;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container{
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+        }
+
+        #content{
+            width: 80vw;
+            height: 80vh;
+            margin: 10vh auto;
+            overflow: hidden;
+            background-color: black;
+        }
+
+        .sliders{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:30vw;
+            height: 10vh;
+            position: relative;
+            top: -10vh;
+            left: 40vw;
+            background: white;
+        }
+
+        img{
+            width: auto;
+            height: 80vh;
+           
+        }
+
+        #passion ,#papa2 , #balloon ,#lastImg, #imgfour{
+             position: absolute;
+            left: 29vw;
+
+        }
+
+        button{
+            width: 5vw;
+            height: auto;
+            position: absolute;
+            background: white;
+            color: black;
+            border: none;
+            font-size: 40px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 900;
+        }
+
+        #a{
+            left: 1vw;
+        }
+
+        #b{
+            left: 7vw;
+        }
+
+        #c{
+            left: 12vw;
+        }
+
+        #d{
+            left: 17vw;
+        }
+
+        #e{
+            left: 22vw;
+        }
+
+        #papa2, #lastImg, #balloon, #imgfour {
+            display: none;
+        }
+
+         #balloon {
+             left: 23vw;
+         }
+
+         #imgfour {
+             left: 17vw;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="content">
+            <img id="passion" src="./passion.jpg" alt="passion for jazz music">
+            <img id="papa2" src="./papa2.jpg" alt="knowledge is power">
+            <img id="balloon" src="./papa.jpg" alt="balloon image">
+            <img id="imgfour" src="./a4cd879bf0c04cf6aa9794e4627c5a65.jpg" alt="">
+            <img id="lastImg" src="./IMG_20210523_121500.jpg" alt="life is short live for Christ">
+        </div>
+        <div class="sliders">
+                <button id="a" onclick="nextImage(this);">1</button>
+                <button id="b" onclick="nextImage(this);">2</button>
+                <button id="c" onclick="nextImage(this);">3</button>
+                <button id="d" onclick="nextImage(this);">4</button>
+                <button id="e" onclick="nextImage(this);">5</button>
+
+                <!-- <button id="prev" onclick="nextImage(this);">O</button>
+                <button id="next" onclick="nextImage(this);">O</button> -->
+        </div> 
+       
+    </div>
+
+
+    <script>
+        let a = document.getElementById('a');
+        let b = document.getElementById('b');
+        let c = document.getElementById('c');
+        let lastImg = document.getElementById('lastImg');
+     let d = document.getElementById('d');
+     let passion= document.getElementById('passion');
+     let papa2= document.getElementById('papa2');
+     let balloon= document.getElementById('balloon');
+     let imgfour = document.getElementById('imgfour');
+     
+     const nextImage = (image) => {
+         let slide = image.innerHTML;
+
+         if(slide == '1') {
+             passion.style.display = 'none';
+             papa2.style.display = 'block';
+             balloon.style.display = 'none';
+             lastImg.style.display = 'none';
+             imgfour.style.display = 'none';
+         } else if(slide == '2') {
+             passion.style.display = 'none';
+             papa2.style.display = 'none';
+             balloon.style.display = 'block';
+             lastImg.style.display = 'none';
+             imgfour.style.display = 'none';
+         } else if(slide == '3') {
+             passion.style.display = 'none';
+             papa2.style.display = 'none';
+             balloon.style.display = 'none';
+             lastImg.style.display = 'block';
+             imgfour.style.display = 'none';
+         }  else if(slide == '4') {
+             passion.style.display = 'none';
+             papa2.style.display = 'none';
+             balloon.style.display = 'none';
+             lastImg.style.display = 'none';
+             imgfour.style.display = 'block';
+         } else if(slide == '5') {
+            passion.style.display = 'block';
+             papa2.style.display = 'none';
+             balloon.style.display = 'none';
+             lastImg.style.display = 'none';
+             imgfour.style.display = 'none';
+         }
+     }
+
+       
+    
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
