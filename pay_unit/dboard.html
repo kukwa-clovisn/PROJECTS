@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="/src/styles/dboard.css">
+</head>
+
+<body>
+    <main>
+        <div class="left-content">
+            <div class="logo">
+                <img src="/assets/SevenPay2x.png" alt="">
+            </div>
+            <div class="profile">
+                <img src="/assets/kjt.jpg" alt="">
+                <h2 id="username">username</h2>
+            </div>
+            <div class="left-content-nav">
+                <nav>
+                    <i class="fa fa-home"></i>
+                    <span>dashboard</span>
+                </nav>
+                <nav class="psp">
+                    <i class="fa fa-archive" aria-hidden="true"></i>
+                    <span>PSPs</span>
+                </nav>
+                <nav>
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <span>merchants</span>
+                </nav>
+                <nav>
+                    <i class="fa fa-user-circle"></i>
+                    <span>service accounts</span>
+                </nav>
+                <nav>
+                    <i class="fa fa-server" aria-hidden="true"></i>
+                    <span>service subscriptions</span>
+                </nav>
+                <nav>
+                    <i class="fa fa-code" aria-hidden="true"></i>
+                    <span>API docs</span>
+                </nav>
+                <nav>
+                    <i class="fa fa-clock" aria-hidden="true"></i>
+                    <span>logs</span>
+                </nav>
+            </div>
+            <div class="log-out">
+                <nav>
+                    <i class="fa fa-arrow-circle-left" aria-hidden="true"></i>
+                    <span><a href="/index.html"> sign out</a></span>
+                </nav>
+            </div>
+        </div>
+        <div class="right-content">
+            <header>
+                <div class="media-small">
+                    <i class="fa fa-bars" id="menu-btn" aria-hidden="true"></i>
+                    <img class="logo" src="/assets/SevenPay2x.png" alt="">
+                    <img class="profile-img" src="/assets/kjt.jpg" alt="">
+                </div>
+                <h1>dashboard-psp</h1>
+                <div>
+                    <input type="search" name="search" id="search" list="search-payment" placeholder="Search in table...">
+                    <datalist id="search-payment">
+                        <option value="MTN MOMO">MTN Mobile Money</option>
+                        <option value="ORANGE MONEY">Orange Mobile Money</option>
+                        <option value="EXPRESS UNION">EU</option>
+                        <option value="PAYPAL">Paypal</option>
+                        <option value="VISA CARD">Visa Card</option>
+                    </datalist>
+                    <button type="submit" title="search" onclick="searchPayment()"><i class="fa fa-search"></i></button>
+                </div>
+
+                <i class="fa fa-bell pk" title="20 notifications"></i>
+                <i class="fa fa-users pk" title="others"></i>
+
+            </header>
+            <div id="blur">
+                <img src="/assets/kjt.jpg" alt="">
+                <h2 id="profile-name" class="text-center text-uppercase text-white p-2">profile name</h2>
+                <ul>
+                    <li class="text-center text-white text-capitalize m-2  p-2 bg-info">update profile photo</li>
+                    <li class="text-center text-white text-capitalize m-2 p-2 bg-success">change profile name</li>
+                    <li class="text-center text-white text-capitalize m-2 p-2 bg-danger">more...</li>
+                </ul>
+            </div>
+            <section id="payment-details">
+                <h1 class="text-center text-danger p-1 mt-2 text-uppercase">payment details</h1>
+                <ul class="container jumbotron">
+                    <h3 id="jumbotron-header" class="text-center text-uppercase text-white hoverable"></h3>
+                    <li class="text-white text-capitalize p-1">10 transactions <span class="text-white">one month ago</span></li>
+                    <li class="text-white text-capitalize p-1">2 failed transactions <span>one month ago</span></li>
+                    <li class="text-white text-capitalize p-1">7 successful transactions <span>one month ago</span></li>
+                    <li class="text-white text-capitalize p-1">1 pending transaction <span>one minute ago</span></li>
+                </ul>
+                <div class="dropdown">
+                    <button class="btn btn-success  rounded dropdown border-0" data-bs-toggle="dropdown">payment methods</button>
+                    <ul class="dropdown-menu bg-primary text-uppercase" id="drop-menu">
+                        <li class="dropdown-item">mtn momo</li>
+                        <li class="dropdown-item">orange money</li>
+                        <li class="dropdown-item">express union</li>
+                        <li class="dropdown-item">paypal</li>
+                        <li class="dropdown-item">visa card</li>
+                    </ul>
+                </div>
+                <!-- <datalist id="methods">
+                    <option value="ORANGE MONEY"></option>
+                    <option value="EXPRESS UNION"></option>
+                    <option value="PAYPAL"></option>
+                    <option value="VISA CARD"></option>
+                </datalist>
+                <input type="text" name="text" list="methods" placeholder="other payment methods"> -->
+                <button onclick="hideDetails()" class="btn btn-danger rounded border-0 hoverable">close details</button>
+            </section>
+            <div id="content">
+                    <img src="/assets/mtn.png" id="content-img" alt="">
+                    <h3 id="content-name">mtn momo</h3>
+                    <div class="details">
+                        <div>
+                            <span>charge:</span>
+                            <i>2%</i>
+                        </div>
+                        <div>
+                            <span>current B:</span>
+                            <i id="current"></i>
+                        </div>
+                        <div>
+                            <span>deposited:</span>
+                            <i id="deposite"></i>
+                        </div>
+                        <div>
+                            <span>withdrawn:</span>
+                            <i id="withdrawn">400000</i>
+                        </div>
+                        <div>
+                            <span>ballance:</span>
+                            <i id="ballance"></i>
+                        </div>
+                        <div>
+                            <button onclick="myfunction()">close</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="right-content-divs">
+                <div>
+                    <img src="/assets/mtn.png" alt="">
+                    <h2>mtn momo</h2>
+
+                    <button class="btn-1 btn" onclick="myfunction()">see details</button>
+                </div>
+                <div>
+                    <img src="/assets/eu.png" alt="">
+                    <h2>express union</h2>
+
+                    <button class="btn-2 btn" onclick="myfunction()">see details</button>
+                </div>
+                <div>
+                    <img src="/assets/orange.png" alt="">
+                    <h2>orange money</h2>
+
+                    <button class="btn-3 btn" onclick="myfunction()">see details</button>
+                </div>
+                <div>
+                    <img src="/assets/paypal.png" alt="">
+                    <h2>paypal</h2>
+                    <button class="btn-2 btn" onclick="myfunction()">see details</button>
+                </div>
+                <div>
+                    <img src="/assets/cb.png" alt="">
+                    <h2>central bank</h2>
+                    <button class="btn-2 btn" onclick="myfunction()">see details</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/bootstrap.bundle.min.js"></script>
+    <script src="/dboard.js"></script>
+</body>
+
+</html>

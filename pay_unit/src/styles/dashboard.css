@@ -1,0 +1,341 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+  background-color: #00a49a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header img {
+  width: 130px;
+  display: block;
+}
+
+main {
+  width: 100%;
+  height: 80vh;
+  background-color: #bfbfbf;
+  position: relative;
+}
+
+main .page-one, main .page-two, main .page-three {
+  width: 40%;
+  height: 75%;
+  background-color: white;
+  margin: 0 auto;
+  position: absolute;
+  top: 7%;
+  left: 30%;
+  border-radius: 10px;
+}
+
+main .page-one h1, main .page-two h1, main .page-three h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 10px;
+}
+
+main .page-one button, main .page-two button, main .page-three button, main .page-one input, main .page-two input, main .page-three input {
+  width: 80%;
+  height: 50px;
+  padding-left: 10px;
+  background: whitesmoke;
+  color: #606060;
+  display: block;
+  margin: 3.5% auto;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border: 0.5px solid #dad8d8;
+  border-bottom: 1px solid black;
+  border-radius: 3px 2px 0 0;
+  outline: none;
+  text-align: left;
+}
+
+main .page-one button:hover, main .page-two button:hover, main .page-three button:hover, main .page-one input:hover, main .page-two input:hover, main .page-three input:hover {
+  border-top: 3px solid teal;
+}
+
+main .page-one button:last-child, main .page-two button:last-child, main .page-three button:last-child, main .page-one input:last-child, main .page-two input:last-child, main .page-three input:last-child {
+  height: 37x;
+  border-radius: 3px 2px 0 0;
+  border: none;
+  background-color: #00a49a;
+  text-align: center;
+  color: white;
+  margin: 2% auto;
+}
+
+main .page-one button:last-child:active, main .page-two button:last-child:active, main .page-three button:last-child:active, main .page-one input:last-child:active, main .page-two input:last-child:active, main .page-three input:last-child:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+main .page-one #pay-btn, main .page-two #pay-btn, main .page-three #pay-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 20px;
+  border-radius: 40px;
+  text-transform: uppercase;
+  height: 40px;
+  position: relative;
+  top: 5px;
+  width: 82%;
+}
+
+main .page-one input:focus, main .page-two input:focus, main .page-three input:focus {
+  border-top: 3px solid red;
+  outline: none;
+}
+
+main .page-one input::-webkit-scrollbar, main .page-two input::-webkit-scrollbar, main .page-three input::-webkit-scrollbar {
+  display: none;
+}
+
+main .page-one #username, main .page-two #username, main .page-three #username {
+  background: whitesmoke;
+  border-radius: 3px 2px 0 0;
+  border: 0.5px solid #d4d4d4;
+  border-bottom: 1px solid #606060;
+  color: #606060;
+  text-align: left;
+  height: 50px;
+}
+
+main .page-one #username:hover, main .page-two #username:hover, main .page-three #username:hover {
+  border-top: 3px solid teal;
+}
+
+main .page-one #username:focus, main .page-two #username:focus, main .page-three #username:focus {
+  border-top: 3px solid red;
+}
+
+main .page-one #amount.error, main .page-two #amount.error, main .page-three #amount.error {
+  border: 2px solid red;
+  color: teal;
+}
+
+main .page-one span, main .page-two span, main .page-three span {
+  font-size: 11px;
+  margin: -3% 14% 0 14%;
+  display: none;
+  color: red;
+  padding: 2px;
+}
+
+main .page-one.hide, main .hide.page-two, main .hide.page-three {
+  display: none;
+}
+
+main .page-two {
+  display: none;
+  height: 90%;
+  top: 2%;
+}
+
+main .page-two p {
+  margin: 2% auto;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+main .page-two #get-amount {
+  display: block;
+  width: 100px;
+  height: 30px;
+  margin: 0 auto;
+  border: 1px solid #999;
+  border-radius: 30px;
+  color: teal;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .page-two h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+main .page-two .option {
+  width: 90%;
+  margin: 3% auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 2%;
+  padding: 13px 0;
+  border-bottom: 2px solid teal;
+}
+
+main .page-two .option div {
+  width: 100%;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid #a09f9f;
+  border-radius: 5px;
+  margin: 3% auto;
+}
+
+main .page-two .option div img {
+  height: 50%;
+  margin-left: 3%;
+}
+
+main .page-two .option div span {
+  display: block;
+  width: 50%;
+  margin: -2% auto;
+  text-transform: uppercase;
+  color: #444;
+  font-weight: 500;
+}
+
+main .page-two .option div input {
+  width: 20px;
+  border: 2px solid #555;
+}
+
+main .page-two .nav-btn {
+  width: 80%;
+  margin: 1% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+main .page-two .nav-btn button, main .page-two .nav-btn input {
+  width: 40%;
+  background: teal;
+  height: 40px;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main .page-two .nav-btn button:last-child, main .page-two .nav-btn input:last-child {
+  background: tomato;
+}
+
+main .page-three {
+  display: none;
+}
+
+footer {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #00a49a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 20px;
+  color: white;
+}
+
+button, main .page-one input, main .page-two input, main .page-three input {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+button:active, main .page-one input:active, main .page-two input:active, main .page-three input:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+/*# sourceMappingURL=dashboard.css.map */

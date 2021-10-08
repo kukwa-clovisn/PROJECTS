@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/src/styles/dashboard.css">
+</head>
+
+<body>
+    <header>
+        <img src="/assets/SevenPay2x.png" alt="">
+    </header>
+    <main>
+        <div class="page-one">
+            <h1>hosted payment simulation</h1>
+            <div class="dropdown">
+                <input type="text" name="select" list="mode" id="select" placeholder="Selcet mode">
+                <datalist id="mode">
+                    <option value="sandbox"></option>
+                    <option value="live"></option>
+                </datalist>
+                <!-- <button type="button" class="btn dropdown" data-bs-toggle="dropdown">
+                    select a mode
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">sandbox</a></li>
+                    <li><a class="dropdown-item" href="#">live</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul> -->
+            </div>
+            <div class="dropdown">
+                <input type="text" name="username" id="username" placeholder="Enter username" required>
+                <!-- <button type="button" class="btn dropdown" data-bs-toggle="dropdown">
+                    choose currency
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">USD</a></li>
+                    <li><a class="dropdown-item" href="#">XAF</a></li>
+                    <li><a class="dropdown-item" href="#">GBP</a></li>
+                    <li><a class="dropdown-item" href="#">EUR</a></li>
+                    <li><a class="dropdown-item" href="#">Link 3</a></li> 
+                </ul> -->
+            </div>
+            <div>
+                <input type="number" name="amout" id="amount" placeholder="Enter amount" min="100" required>
+                <span id="error-msg">please enter a valid name and amount!</span>
+                <button id="pay-btn" onclick="pay()">pay</button>
+            </div>
+        </div>
+        <div class="page-two">
+            <p>total to pay</p>
+            <span id="get-amount">amount</span>
+            <h3>select your payment method</h3>
+            <div class="option">
+                <div>
+                    <img src="/assets/mtn.png" id="mtn-logo" alt="">
+                    <span>mtn momo</span>
+                    <input type="radio" name="radio" id="mtn">
+                </div>
+                <div>
+                    <img src="/assets/eu.png" id="eu-logo" alt="">
+                    <span>express union</span>
+                    <input type="radio" name="radio" id="eu">
+                </div>
+                <div>
+                    <img src="/assets/orange.png" id="orange-logo" alt="">
+                    <span>orange money</span>
+                    <input type="radio" name="radio" id="orange">
+                </div>
+                <div>
+                    <img src="/assets/cb.png" id="cb-logo" alt="">
+                    <span>visa card</span>
+                    <input type="radio" name="radio" id="cb">
+                </div>
+                <div>
+                    <img src="/assets/paypal.png" id="paypal-logo" alt="">
+                    <span>paypal</span>
+                    <input type="radio" name="radio" id="paypal">
+                </div>
+            </div>
+            <div class="nav-btn">
+                <button onclick="back()"> go back</button>
+                <button onclick="next()">next</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        copyright&copy;KCN2021
+    </footer>
+    <script src="/bootstrap.bundle.min.js"></script>
+    <script src="/dashboard.js"></script>
+</body>
+
+</html>

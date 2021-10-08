@@ -43,6 +43,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    cursor: pointer;
   }
   header .paypal .pay-pal span {
     color: #f49e22;
@@ -62,21 +63,33 @@
   header .navbar a {
     text-decoration: none;
     color: white;
-    font-size: 150%;
+    font-size: 130%;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     z-index: 1;
     text-transform: capitalize;
   }
   header .navbar a:hover {
-    color: crimson;
+    color: tomato;
     border-bottom: 3px solid white;
   }
   header .navbar .sign-in {
-    padding: 6px;
-    border-radius: 10px;
-    background-color: #f49e22;
-    color: white;
+    border-radius: 40px;
+    background-color: white;
+    color: #606060;
+    display: block;
+    width: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 40px;
+    font-size: 15px;
   }
   header .menu {
     display: none;
@@ -117,6 +130,7 @@
         -ms-flex-align: center;
             align-items: center;
     padding: 10px;
+    cursor: pointer;
   }
   .home .left-content .demo p {
     width: 40%;
@@ -153,12 +167,14 @@
     position: relative;
     top: -20%;
     left: 57%;
+    cursor: pointer;
   }
   .home .computer {
     width: 40%;
     position: relative;
     top: 18%;
     left: 10%;
+    cursor: pointer;
     animation: computer infinite 5s linear alternate-reverse forwards;
   }
   .home .computer:active {
@@ -201,12 +217,14 @@
   #features .features .content h2 i {
     color: black;
   }
-  #features .features .content .box1, #features .features .content .box3 {
+  #features .features .content .box1,
+  #features .features .content .box3 {
     position: relative;
     top: -30vw;
     left: 0;
   }
-  #features .features .content .box2, #features .features .content .box4 {
+  #features .features .content .box2,
+  #features .features .content .box4 {
     position: relative;
     top: 30vw;
     left: 0;
@@ -343,8 +361,10 @@
   #contacts {
     width: 100%;
     height: auto;
-    background-color: #7b39b9;
+    background: -webkit-gradient(linear, left bottom, left top, from(#1c9797), color-stop(80%, #52898b));
+    background: linear-gradient(to top, #1c9797 0%, #52898b 80%);
     color: white;
+    margin-top: -1%;
   }
   #contacts h1 {
     font-weight: 700;
@@ -392,28 +412,35 @@
     height: 80vh;
     margin: 1%;
   }
-  #contacts .container #form1, #contacts .container #form2, #contacts .container #form3 {
+  #contacts .container #form1,
+  #contacts .container #form2,
+  #contacts .container #form3 {
     width: 100%;
     height: 100%;
-    background-color: #9454d1;
+    background-color: white;
     display: -ms-grid;
     display: grid;
     visibility: hidden;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  #contacts .container #form1 div, #contacts .container #form2 div, #contacts .container #form3 div {
+  #contacts .container #form1 div,
+  #contacts .container #form2 div,
+  #contacts .container #form3 div {
     width: 90%;
     height: 80%;
     margin: auto;
     display: inline-block;
     padding: 2%;
-    background-color: white;
+    background-color: #e4e2e2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-radius: 3px;
   }
-  #contacts .container #form1 div:last-child, #contacts .container #form2 div:last-child, #contacts .container #form3 div:last-child {
+  #contacts .container #form1 div:last-child,
+  #contacts .container #form2 div:last-child,
+  #contacts .container #form3 div:last-child {
     background-color: inherit;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -425,7 +452,10 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  #contacts .container #form1 div:last-child button, #contacts .container #form2 div:last-child button, #contacts .container #form3 div:last-child button {
+  #contacts .container #form1 div:last-child button,
+  #contacts .container #form2 div:last-child button,
+  #contacts .container #form3 div:last-child button {
+    min-width: 150px;
     border-radius: 10px;
     padding: 3%;
     width: 50%;
@@ -433,15 +463,21 @@
     text-transform: capitalize;
     outline: none;
   }
-  #contacts .container #form1 div i, #contacts .container #form2 div i, #contacts .container #form3 div i {
+  #contacts .container #form1 div i,
+  #contacts .container #form2 div i,
+  #contacts .container #form3 div i {
     padding: 0 3%;
     margin: auto;
     color: #8d30e4;
   }
-  #contacts .container #form1 div i:nth-child(odd), #contacts .container #form2 div i:nth-child(odd), #contacts .container #form3 div i:nth-child(odd) {
+  #contacts .container #form1 div i:nth-child(odd),
+  #contacts .container #form2 div i:nth-child(odd),
+  #contacts .container #form3 div i:nth-child(odd) {
     color: teal;
   }
-  #contacts .container #form1 div input, #contacts .container #form2 div input, #contacts .container #form3 div input {
+  #contacts .container #form1 div input,
+  #contacts .container #form2 div input,
+  #contacts .container #form3 div input {
     -webkit-transition: hover 2s ease-in;
     transition: hover 2s ease-in;
     width: 50%;
@@ -453,8 +489,11 @@
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    background: #e6e3e3;
   }
-  #contacts .container #form1 div input:hover, #contacts .container #form2 div input:hover, #contacts .container #form3 div input:hover {
+  #contacts .container #form1 div input:hover,
+  #contacts .container #form2 div input:hover,
+  #contacts .container #form3 div input:hover {
     background-color: #eceaea;
     border-color: black;
   }
@@ -499,7 +538,7 @@
     margin: 5%;
   }
   #contacts .container #form3 div button {
-    background: #7b39b9;
+    background: teal;
   }
 }
 
@@ -653,7 +692,8 @@
   }
 }
 
-*, body {
+*,
+body {
   margin: 0;
   padding: 0;
 }
@@ -729,9 +769,9 @@ body {
   }
   header .navbar .sign-in {
     padding: 12px;
-    border-radius: 20px;
-    background-color: #f49e22;
-    color: white;
+    border-radius: 40px;
+    background-color: white;
+    color: purple;
   }
   header .menu {
     position: relative;
